@@ -574,9 +574,10 @@ public class pcClient extends javax.swing.JFrame {
        try{
             output = new DataOutputStream(socket.getOutputStream());
             menuCmd ="circulation";
-            output.writeUTF(menuCmd);
+            
             cLayout = (CardLayout)adminPanel2.getLayout();
             cLayout.show(adminPanel2, "card4");
+            output.writeUTF(menuCmd);
         }
         catch(Exception e){
             System.out.println(e.getMessage());
@@ -587,9 +588,10 @@ public class pcClient extends javax.swing.JFrame {
        try{
             output = new DataOutputStream(socket.getOutputStream());
             menuCmd ="bookDb";
-            output.writeUTF(menuCmd);
+            
             cLayout = (CardLayout)adminPanel2.getLayout();
             cLayout.show(adminPanel2, "card2");
+            output.writeUTF(menuCmd);
         }
         catch(Exception e){
             System.out.println(e.getMessage());
@@ -600,9 +602,10 @@ public class pcClient extends javax.swing.JFrame {
         try{
             output = new DataOutputStream(socket.getOutputStream());
             menuCmd ="userDb";
-            output.writeUTF(menuCmd);
+            
             cLayout = (CardLayout)adminPanel2.getLayout();
             cLayout.show(adminPanel2, "card3");
+            output.writeUTF(menuCmd);
         }
         catch(Exception e){
             System.out.println(e.getMessage());
